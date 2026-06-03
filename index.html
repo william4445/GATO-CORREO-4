@@ -114,7 +114,7 @@
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -40%);
+            transform: translate(-50%, -50%);
             z-index: 5;
             width: 92%;
             max-width: 860px;
@@ -135,7 +135,7 @@
         ====================================== */
         .texto-carta {
             color: #fff;
-            font-size: clamp(1.35rem, 4.5vw, 2.1rem);
+            font-size: clamp(1.7rem, 5.5vw, 2.2rem);
             font-weight: 700;
             line-height: 1.5;
             white-space: pre-wrap;
@@ -200,7 +200,7 @@
         /* Cuando la rosa está visible, el texto se hace más pequeño para caber junto */
         .rosa-central.visible ~ .texto-carta,
         .texto-carta.con-rosa {
-            font-size: clamp(1.1rem, 3.8vw, 1.7rem) !important;
+            font-size: clamp(1.4rem, 4.8vw, 1.9rem) !important;
             line-height: 1.4;
         }
 
@@ -414,13 +414,13 @@
 
     <!-- Mensajes e Imágenes -->
     <div class="contenido-interactivo">
-        <img src="ro1.png" alt="Rosa" class="rosa-central" id="rosaCentral">
+        <img src="ro1.png" alt="Rosa" class="rosa-central" id="rosaCentral" onerror="this.style.display='none'">
 
         <h1 class="texto-carta" id="textoMensaje"></h1>
         
         <div class="galeria-fotos">
-            <img src="tu.png" alt="Tú" class="foto" id="fotoTu">
-            <img src="yo.png" alt="Yo" class="foto" id="fotoYo">
+            <img src="tu.png" alt="Tú" class="foto" id="fotoTu" onerror="this.style.visibility='hidden'">
+            <img src="yo.png" alt="Yo" class="foto" id="fotoYo" onerror="this.style.visibility='hidden'">
         </div>
 
         <h2 class="texto-final" id="textoFinal">TE QUIERO MUCHO</h2>
